@@ -1,0 +1,29 @@
+{
+    "name": "Seonbi",
+    "author": "Lee0701",
+    "description": "An API wrapper for Seonbi, SmartyPants for Korean language",
+    "version": "0.0.1",
+    "type": "hooks",
+    "AutoloadClasses": {
+        "SeonbiHooks": "includes/SeonbiHooks.php"
+    },
+    "Hooks": {
+        "ParserAfterTidy": "SeonbiHooks::onParserAfterTidy",
+        "OutputPageBeforeHTML": "SeonbiHooks::onOutputPageBeforeHTML"
+    },
+    "MessagesDirs": {
+        "Seonbi": [
+            "i18n"
+        ]
+    },
+	"config": {
+        "SeonbiApiUrl": {
+            "value": "http://localhost:3000",
+            "description": "A url of the Seonbi API"
+        }
+	},
+	"ConfigRegistry": {
+		"seonbi": "GlobalVarConfig::newInstance"
+	},
+    "manifest_version": 1
+}
