@@ -20,10 +20,34 @@
         "SeonbiApiUrl": {
             "value": "http://localhost:3000",
             "description": "A url of the Seonbi API"
+        },
+        "SeonbiQuote": {
+            "value": "CurvedQuotes"
+        },
+        "SeonbiCite": {
+            "value": "AngleQuotes"
+        },
+        "SeonbiArrow": {
+            "value": true
+        },
+        "SeonbiBidirArrow": {
+            "value": true
+        },
+        "SeonbiDoubleArrow": {
+            "value": true
+        },
+        "SeonbiEllipsis": {
+            "value": true
+        },
+        "SeonbiEmDash": {
+            "value": true
+        },
+        "SeonbiStop": {
+            "value": "Vertical"
         }
 	},
 	"ConfigRegistry": {
 		"seonbi": "GlobalVarConfig::newInstance"
 	},
-    "manifest_version": 1
+    "manifest_version": 2
 }
